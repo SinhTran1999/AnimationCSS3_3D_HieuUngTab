@@ -1,0 +1,95 @@
+*{margin: 0; padding: 0;}
+
+.ndchitiet {
+    color: gray;
+    font-family: segoe ui light;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.ndchitiet img {
+    width: 29%;
+    border: 1px solid gray;
+    padding: 2px;
+    margin-right: 20px;
+}
+
+.bonnd li {
+    position: absolute;
+    list-style: none;
+    width: 900px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    transition: 0.4s;
+    /*Ban dau 0 phong to*/
+    transform:scale(0);
+    /*Hoac co the dung dich chuyen
+	transform:translateX(-1300px);
+    */
+}
+
+.bonnd li:after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 1px #ddd solid;
+    position: absolute;
+    top: -9px;
+    transform: rotate(45deg);
+}
+.bonnd li:before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 0px #ddd solid;
+    position: absolute;
+    top: -7px;
+    transform: rotate(45deg);
+    background: white;
+    z-index: 4;
+}
+
+.bonnd {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+li {}
+
+.bonnut li {
+    list-style: none;
+    float: left;
+    margin:10px;
+    
+}
+
+.bonnut {
+    height: 74px;
+    width: 900px;
+    margin: auto;
+    background: white;
+} 
+li.active button.btn{
+	background:#f0ad4e; 
+	color:black;
+}
+.bonnd li{
+	opacity:0;
+	visibility: hidden;
+}
+.bonnd li.hienlen{
+	opacity: 1;
+	visibility: visible;
+	/*Luc nhan vao thi no se zoom le 100lan*/
+	transform: scale(1);
+	/*Luc nhan vao thi hinh 
+	transform:translate(0);
+	 quay lai*/
+}
